@@ -9,7 +9,7 @@ Java Basics
 	- Statements, WhiteSpace and Indentation(T)
 	- Code blocks(M)
 	- Methods(T)
-	- Controll Flow Statements	(M)
+	- Control Flow Statements	(M)
 Java Intermediate(OOP)
 	- Classes
 	- Constructors
@@ -19,7 +19,7 @@ Java Intermediate(OOP)
 	- Method Overriding
 	- Static vs Instance Variables/Methods
 	- Composition
-	- Incapsulation
+	- Encapsulation
 	- Polymorphism
 	- Autoboxing/unboxing
 
