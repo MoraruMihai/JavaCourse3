@@ -1,0 +1,31 @@
+Java Basics
+	- Expressions(M)
+	- Variables(T)
+	- Primitives(M)
+	- Casting(T)
+	- Logical Operators(M)
+	- Ternary Operator(T)
+	- Keywords(M)
+	- Statements, WhiteSpace and Indentation(T)
+	- Code blocks(M)
+	- Methods(T)
+	- Controll Flow Statements	(M)
+Java Intermediate(OOP)
+	- Classes
+	- Constructors
+	- this vs super
+	- Inheritance
+	- Method Overloading
+	- Method Overriding
+	- Static vs Instance Variables/Methods
+	- Composition
+	- Incapsulation
+	- Polymorphism
+	- Autoboxing/unboxing
+
+Java Advanced
+	- Collections
+	- Generics
+	- Java FX
+	- Concurrency
+	- Lambda Expressions
