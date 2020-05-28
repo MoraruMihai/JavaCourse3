@@ -1,0 +1,308 @@
+Java-Details
+
+Expressions:
+Expressions are essential building blocks of any Java program, usually created to produce a new value,
+although sometimes an expression assigns a value to a variable. Expressions are built using values,
+variables, operators and method calls.
+Types of Expressions: While an expression frequently produces a result, it doesn't always. There are
+three types of expressions in Java:
+1.	Those that produce a value, i.e., the result of
+(1	+ 1)
+2.	Those that assign a variable, for example
+(v = 10)
+3.	Those that have no result but might have a "side effect" because an expression can include a wide
+range of elements such as method invocations or increment operators that modify the state (i.e., memory)
+of a program.
+
+Variables:
+Variable is name of reserved area allocated in memory. In other words, it is a name of memory location. It is a combination of "vary + able" that means its value can be changed.
+There are three types of variables in Java: local variable, instance variable, static variable.
+Local Variable - A variable declared inside the body of the method is called local variable. You can use
+this variable only within that method and the other methods in the class aren't even aware that the
+variable exists. A local variable cannot be defined with "static" keyword.
+Instance Variable - A variable declared inside the class but outside the body of the method, is called
+instance variable. It is not declared as static. It is called instance variable because its value is
+instance specific and is not shared among instances.
+Static variable - A variable which is declared as static is called static variable. It cannot be local.
+You can create a single copy of static variable and share among all the instances of the class. Memory
+allocation for static variable happens only once when the class is loaded in the memory.
+
+Primitives:
+In Java language, primitive data types are the building blocks of data manipulation. These are the most
+basic data types available in Java language.
+There are 8 types of primitive data types: boolean data type, byte data type, char data typeshort data
+type, int data type, long data type, float data type, double data type
+Boolean - The Boolean data type is used to store only two possible values: true and false. This data type
+is used for simple flags that track true/false conditions. The Boolean data type specifies one bit of
+information, but its "size" can't be defined precisely.
+Example: Boolean one = false
+Byte - The byte data type is an example of primitive data type. It isan 8-bit signed two's complement integer. Its value-range lies between -128 to 127 (inclusive). Its minimum value is -128 and maximum value is 127. Its default value is 0.
+The byte data type is used to save memory in large arrays where the memory savings is most required. It saves space because a byte is 4 times smaller than an integer. It can also be used in place of "int" data type.
+Example: byte a = 10, byte b = -20
+Short - The short data type is a 16-bit signed two's complement integer. Its value-range lies between -32,768 to 32,767 (inclusive). Its minimum value is -32,768 and maximum value is 32,767. Its default value is 0.The short data type can also be used to save memory just like byte data type. A short data type is 2 times smaller than an integer.
+Example: short s = 10000, short r = -5000
+Int - The int data type is a 32-bit signed two's complement integer. Its value-range lies between - 2,147,483,648 (-2^31) to 2,147,483,647 (2^31 -1) (inclusive). Its minimum value is - 2,147,483,648and maximum value is 2,147,483,647. Its default value is 0. The int data type is generally used as a default data type for integral values unless if there is no problem about memory.
+Example: int a = 100000, int b = -200000
+Long - The long data type is a 64-bit two's complement integer. Its value-range lies between -9,223,372,036,854,775,808(-2^63) to 9,223,372,036,854,775,807(2^63 -1)(inclusive). Its minimum value is - 9,223,372,036,854,775,808and maximum value is 9,223,372,036,854,775,807. Its default value is 0. The long data type is used when you need a range of values more than those provided by int.
+Example: long a = 100000L, long b = -200000L
+Float - The float data type is a single-precision 32-bit IEEE 754 floating point.Its value range is unlimited. It is recommended to use a float (instead of double) if you need to save memory in large arrays of floating point numbers. The float data type should never be used for precise values, such as currency. Its default value is 0.0F.
+Example: float f1 = 234.5f
+Double - The double data type is a double-precision 64-bit IEEE 754 floating point. Its value range is unlimited. The double data type is generally used for decimal values just like float. The double data type also should never be used for precise values, such as currency. Its default value is 0.0d.
+Example: double d1 = 12.3
+Char - The char data type is a single 16-bit Unicode character. Its value-range lies between '\u0000' (or 0) to '\uffff' (or 65,535 inclusive).The char data type is used to store characters.
+Example: char letterA = 'A'.
+
+Logical Operators:
+Logical operators are mainly used to control program flow. Usually, you will find them as part of an if, a while, or some other control statement (Chapter 6)
+The Logical operators are:
+op1 && op2
+-- Performs a logical AND of the two operands.
+op1 || op2
+-- Performs a logical OR of the two operands.
+!op1
+-- Performs a logical NOT of the operand.
+The concept of logical operators is simple. They allow a program to make a decision based on multiple conditions. Each operand is considered a condition that can be evaluated to a true or false value. Then the value of the conditions is used to determine the overall value of the op1 operator op2 or !op1 grouping. The following examples demonstrate different ways that logical conditions can be used.
+The && operator is used to determine whether both operands or conditions are true and.pl.
+For example:
+if ($firstVar == 10 && $secondVar == 9) {
+
+    print("Error!");
+
+};
+If either of the two conditions is false or incorrect, then the print command is bypassed.
+The || operator is used to determine whether either of the conditions is true.
+For example:
+if ($firstVar == 9 || $firstVar == 10) {
+
+    print("Error!");
+If either of the two conditions is true, then the print command is run.
+Caution If the first operand of the || operator evaluates to true, the second operand will not be evaluated. This could be a source of bugs if you are not careful.
+For instance, in the following code fragment:
+if ($firstVar++ || $secondVar++) { print("\n"); }
+variable $secondVar will not be incremented if $firstVar++ evaluates to true.
+The ! operator is used to convert true values to false and false values to true. In other words, it inverts a value. Perl considers any non-zero value to be true-even string values. For example:
+
+    $firstVar = 10;
+    $secondVar = !$firstVar;
+    if ($secondVar == 0) {
+        print("zero\n");
+    }
+is equal to 0- and the program produces the following output:
+zero
+You could replace the 10 in the first line with "ten," 'ten,' or any non-zero, non-null value.
+
+Keywords:
+Java keywords are also known as reserved words. Keywords are particular words which acts as a key to a code. These are predefined words by Java so it cannot be used as a variable or object name.
+A list of Java keywords or reserved words are given below:
+1.	abstract: Java abstract keyword is used to declare abstract class. Abstract class can provide the implementation of interface. It can have abstract and non-abstract methods.
+2.	boolean: Java boolean keyword is used to declare a variable as a boolean type. It can hold True and False values only.
+3.	break: Java break keyword is used to break loop or switch statement. It breaks the current flow of the program at specified condition.
+4.	byte: Java byte keyword is used to declare a variable that can hold an 8-bit data values.
+5.	case: Java case keyword is used to with the switch statements to mark blocks of text.
+6.	catch: Java catch keyword is used to catch the exceptions generated by try statements. It must be used after the try block only.
+7.	char: Java char keyword is used to declare a variable that can hold unsigned 16-bit Unicode characters
+8.	class: Java class keyword is used to declare a class.
+9.	continue: Java continue keyword is used to continue the loop. It continues the current flow of the program and skips the remaining code at the specified condition.
+10.	default: Java default keyword is used to specify the default block of code in a switch statement.
+11.	do: Java do keyword is used in control statement to declare a loop. It can iterate a part of the program several times.
+12.	double: Java double keyword is used to declare a variable that can hold a 64-bit floating-point numbers.
+13.	else: Java else keyword is used to indicate the alternative branches in an if statement.
+14.	enum: Java enum keyword is used to define a fixed set of constants. Enum constructors are always private or default.
+15.	extends: Java extends keyword is used to indicate that a class is derived from another class or interface.
+16.	final: Java final keyword is used to indicate that a variable holds a constant value. It is applied with a variable. It is used to restrict the user.
+17.	finally: Java finally keyword indicates a block of code in a try-catch structure. This block is always executed whether exception is handled or not.
+18.	float: Java float keyword is used to declare a variable that can hold a 32-bit floating-point number.
+19.	for: Java for keyword is used to start a for loop. It is used to execute a set of instructions/functions repeatedly when some conditions become true. If the number of iteration is fixed, it is recommended to use for loop.
+20.	if: Java if keyword tests the condition. It executes the if block if condition is true.
+21.	implements: Java implements keyword is used to implement an interface.
+22.	import: Java import keyword makes classes and interfaces available and accessible to the current source code.
+23.	instanceof: Java instanceof keyword is used to test whether the object is an instance of the specified class or implements an interface.
+24.	int: Java int keyword is used to declare a variable that can hold a 32-bit signed integer.
+25.	interface: Java interface keyword is used to declare an interface. It can have only abstract methods.
+26.	long: Java long keyword is used to declare a variable that can hold a 64-bit integer.
+27.	native: Java native keyword is used to specify that a method is implemented in native code using JNI (Java Native Interface).
+28.	new: Java new keyword is used to create new objects.
+29.	null: Java null keyword is used to indicate that a reference does not refer to anything. It removes the garbage value.
+30.	package: Java package keyword is used to declare a Java package that includes the classes.
+31.	private: Java private keyword is an access modifier. It is used to indicate that a method or variable may be accessed only in the class in which it is declared.
+32.	protected: Java protected keyword is an access modifier. It can be accessible within package and outside the package but through inheritance only. It can't be applied on the class.
+33.	public: Java public keyword is an access modifier. It is used to indicate that an item is accessible anywhere. It has the widest scope among all other modifiers.
+34.	return: Java return keyword is used to return from a method when its execution is complete.
+35.	short: Java short keyword is used to declare a variable that can hold a 16-bit integer.
+36.	static: Java static keyword is used to indicate that a variable or method is a class method. The static keyword in Java is used for memory management mainly.
+37.	strictfp: Java strictfp is used to restrict the floating-point calculations to ensure portability.
+38.	super: Java super keyword is a reference variable that is used to refer parent class object. It can be used to invoke immediate parent class method.
+39.	switch: The Java switch keyword contains a switch statement that executes code based on test value. The switch statement tests the equality of a variable against multiple values.
+40.	synchronized: Java synchronized keyword is used to specify the critical sections or methods in multithreaded code.
+41.	this: Java this keyword can be used to refer the current object in a method or constructor.
+42.	throw: The Java throw keyword is used to explicitly throw an exception. The throw keyword is mainly used to throw custom exception. It is followed by an instance.
+43.	throws: The Java throws keyword is used to declare an exception. Checked exception can be propagated with throws.
+44.	transient: Java transient keyword is used in serialization. If you define any data member as transient, it will not be serialized.
+45.	try: Java try keyword is used to start a block of code that will be tested for exceptions. The try block must be followed by either catch or finally block.
+46.	void: Java void keyword is used to specify that a method does not have a return value.
+47.	volatile: Java volatile keyword is used to indicate that a variable may change asynchronously.
+48.	while: Java while keyword is used to start a while loop. This loop iterates a part of the program several times. If the number of iteration is not fixed, it is recommended to use while loop.
+
+Code Blocks:
+A block is a group of zero or more statements between balanced braces and can be used anywhere a single
+statement is allowed. Java likes to keep things between the lines, no make that curly braces({}).
+This how we can start and stop a code block in Java. Braces gives the compiler a heads up of where we want to start({) and end(}).
+
+package com.javablocks;
+
+public class JavaCodeBlocks {
+		public static void main (String arg[]) {
+			System.out.println(“Inside the Java code block”);
+				}
+}
+
+In our first example we have not one but two code blocks. First, for the JavaCodeBlock class with the open brace on line 3. Next on line 4 we open the main method with another open brace. Then we close it up on line 6 for the main method and line 7 for the class. A pro tip, most IDEs will highlight the closing brace when you put your cursor by the open brace and vice versa too.
+package com.javablocks;
+	public class void main(String arg[]) {
+		Boolean check = true;
+			If(check) {
+				System.out.println(“Check is true”);
+			}else {
+				System.out.println(“Check is false”);
+			}
+			{
+				System.out.println(“Just a random code block”);
+			}
+		}
+	}
+
+In this example we have an if else with each having their own code block. We don’t have to but helps with readability. Later on we have a random code block too. It looks like it should be wrong if you are new to development but it is perfectly legitimate.
+Java has a few types of code blocks :
+anonymous - Anonymous code blocks really stand out. They are also called instance initialization blocks. They are run before the constructor is called.
+named - We can also create blocks of code and give them a name.
+static - Java has another code block called static code block as we use the static keyword for them.
+
+Control Flow Statements:
+Generally the statements inside your java code are executed from top to bottom, in the order that they appear. Control flow statements, change or break the flow of execution by implementing decision making, looping, and branching your program to execute particular blocks of code based on the conditions.
+There are 3 types of control flow statements supported by the Java programming language.
+•	Decision-making statements : if-then, if-then-else, switch
+•	Looping statements : for, while, do-while
+•	Branching statements : break, continue, return
+If_then - The if-then statement is the most basic of all the control flow statements. It enables your program to execute a certain section of code depending on the state of variables, or values returned from methods.
+If(iscar)
+{
+	System.out.println(“I am a car”);
+}
+If isCar test evaluates to false, control jumps to the end of the if-then statement. In Java, the opening and closing braces are optional.But this is applicable only if the block of code to be executed is just a single statement. But as a good practice, it is advisable to put the brackets around the statements, even if there is only one statement to execute.This is because, in the begining you may start with one statement and later during the development phase you may add more statements. During this a common mistake would be forgetting to add the newly required braces which compiler cannot catch.
+
+The if-then-else statement provides a alternate path of execution when an "if" clause evaluates to false. You can chain if-else statements, and create a decision tree sort of thing.
+
+Switch statement - Another way to control the flow of your programs with decision-making statements is by a switch statement. A switch statement gives you the option to test for a range of values for your variables. If you think your if-else-if statements is long and complex, you can use switch statement instead.The body of a switch statement is known as a switch block. The switch statement evaluates its expression within the brackets, then executes all statements that follow the matching case label. Again there might be more than one cases being matched but switch will choose the first immidiate matching case ignoring the others.break statement is necessary.Because without it, statements in switch blocks fall through.
+
+While statement - The while loop executes a set of statements while a certain conditions is true. In Java there are 2 variations of while loop: while and do-while loop. Here is a simple while loop example:
+
+
+int counter = 0;
+while(counter < 5) {
+			System.out.println(“Inside the while loop, counting: ” + counter);
+			counter ++;
+}
+
+
+This above while loop checks whether counter value is less than 5 to check if the statements inside while loop should be executed or not. If the counter value is less than 5, the while loop body is executed one more time else execution continues at the next statement after the while loop.
+
+The other type of while loop is the do while loop:
+
+int counter = 0;
+do {
+			System.out.println(“Inside the while loop, counting: ” + counter);
+			counter ++;
+
+}while (counter < 5);
+Notice the condition check is moved to end of while body in do-while construct. Which means statements inside the do while loop body is always executed at least once, and is then executed repeatedly while the while loop condition is true.
+This is the main difference between java while and do while loop, that the statements inside the do while loop is always executed at least once before the while loop condition is tested.
+For statement - The Java for loop repeats the execution of a set of Java statements. A for loop executes a block of code as long as some condition is true.
+for (initialization; termination condition; increment/decrement) {
+	//java statement(s)
+}
+The initialization expression initializes the loop and is executed only once at the begining when the loop begins. The termination condition is evaluated every loop and if it evaluates to false, the loop is terminated. And lastly increment/decrement expression is executed after each iteration through the loop.
+There are also branching statements: the break statement, the continue statement and the return statement.
+
+Constructors:
+Constructor is a block of code that initializes the newly created object. A constructor resembles an instance method in java but it’s not a method as it doesn’t have a return type. In short constructor and method are different(More on this at the end of this guide). People often refer constructor as special type of method in Java. Constructor has same name as the class and looks like this in a java code.
+public class MyClass{
+           //this is the constructor
+	MyClass(){
+	}
+	..
+}
+To understand the working of constructor, lets take an example. lets say we have a class MyClass.
+When we create the object of MyClass like this:
+MyClass obj = new MyClass();
+The new keyword here creates the object of class MyClass and invokes the constructor to initialize this newly created object.
+
+Inheritance:
+Inheritance is an important pillar of OOP(Object Oriented Programming). It is the mechanism in java by which one class is allow to inherit the features(fields and methods) of another class.
+Important terminology:
+•	Super Class: The class whose features are inherited is known as super class(or a base class or a parent class).
+•	Sub Class: The class that inherits the other class is known as sub class(or a derived class, extended class, or child class). The subclass can add its own fields and methods in addition to the superclass fields and methods.
+•	Reusability: Inheritance supports the concept of “reusability”, i.e. when we want to create a new class and there is already a class that includes some of the code that we want, we can derive our new class from the existing class. By doing this, we are reusing the fields and methods of the existing class.
+
+
+
+How to use inheritance in Java
+The keyword used for inheritance is extends.
+Syntax :
+Class derived-class extends base-class
+{
+	//methods and fields
+}
+
+Method Overriding:
+In any object-oriented programming language, Overriding is a feature that allows a subclass or child class to provide a specific implementation of a method that is already provided by one of its super-classes or parent classes. When a method in a subclass has the same name, same parameters or signature, and same return type(or sub-type) as a method in its super-class, then the method in the subclass is said to override the method in the super-class.
+Method overriding is one of the way by which java achieve Run Time Polymorphism.The version of a method that is executed will be determined by the object that is used to invoke it. If an object of a parent class is used to invoke the method, then the version in the parent class will be executed, but if an object of the subclass is used to invoke the method, then the version in the child class will be executed. In other words, it is the type of the object being referred to (not the type of the reference variable) that determines which version of an overridden method will be executed.
+// A Simple Java program to demonstrate
+// method overriding in java
+
+// Base Class
+class Parent {
+    void show()
+    {
+        System.out.println("Parent's show()");
+    }
+}
+
+// Inherited class
+class Child extends Parent {
+    // This method overrides show() of Parent
+    @Override
+    void show()
+    {
+        System.out.println("Child's show()");
+    }
+}
+
+// Driver class
+class Main {
+    public static void main(String[] args)
+    {
+        // If a Parent type reference refers
+        // to a Parent object, then Parent's
+        // show is called
+        Parent obj1 = new Parent();
+        obj1.show();
+
+        // If a Parent type reference refers
+        // to a Child object Child's show()
+        // is called. This is called RUN TIME
+        // POLYMORPHISM.
+        Parent obj2 = new Child();
+        obj2.show();
+    }
+}
+
+Composition:
+11.	Composition
+The composition is another mechanism provided by OOP for reusing implementation.
+In a nutshell, composition allows us to model objects that are made up of other objects, thus defining a “has-a” relationship between them.
+Furthermore, the composition is the strongest form of association, which means that the object(s) that compose or are contained by one object are destroyed too when that object is destroyed.
+To better understand how composition works, let's suppose that we need to work with objects that represent computers.
+A computer is composed of different parts, including the microprocessor, the memory, a sound card and so forth, so we can model both the computer and each of its parts as individual classes.
+
+
+
