@@ -1,8 +1,6 @@
 package org.course.controllers;
 
-import org.springframework.lang.Nullable;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.servlet.ModelAndView;
@@ -17,25 +15,9 @@ public class OverviewController {
 
     private Map<String, List<String>> allSubjects;
 
-
     @GetMapping("/overview")
     public ModelAndView overview(){
         return new ModelAndView("overview");
-    }
-
-    @GetMapping("/basics")
-    public ModelAndView basicsChapter(Model model){
-        return new ModelAndView("basics_chapter");
-    }
-
-    @GetMapping("/intermediate")
-    public ModelAndView intermediateChapter(Model model){
-        return new ModelAndView("intermediate_chapter");
-    }
-
-    @GetMapping("/advanced")
-    public ModelAndView advancedChapter(Model model){
-        return new ModelAndView("advanced_chapter");
     }
 
     @GetMapping("/chapter/{chapterName}")
