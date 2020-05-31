@@ -1,0 +1,28 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<html>
+<head>
+    <title>Chapter ${chapterName}</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css"  media="all" >
+</head>
+<body>
+<div class="logo">
+    <img src="https://upload.wikimedia.org/wikipedia/ru/thumb/3/39/Java_logo.svg/1200px-Java_logo.svg.png">
+</div>
+<h2>Course</h2>
+<ul class="menuBar">
+    <li><a href="advanced">Advanced</a></li>
+    <li><a href="intermediate">Intermediate</a></li>
+    <li><a href="basic">Basics</a></li>
+    <li><a href="#about">Overview</a></li>
+</ul>
+<h1>Basics</h1>
+
+<ul class="subjectsList">
+    <c:forEach items="${subjects}" var="subject">
+        <div class="listElement">
+            <li>${subject}</li>
+        </div>
+    </c:forEach>
+</ul>
+</body>
+</html>
