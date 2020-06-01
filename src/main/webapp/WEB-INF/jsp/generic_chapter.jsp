@@ -10,10 +10,10 @@
 </div>
 <h2>Course</h2>
 <ul class="menuBar">
-    <li><a href="advanced">Advanced</a></li>
-    <li><a href="intermediate">Intermediate</a></li>
-    <li><a href="basic">Basics</a></li>
-    <li><a href="#about">Overview</a></li>
+    <li><a href="/chapter/advanced">Advanced</a></li>
+    <li><a href="/chapter/intermediate">Intermediate</a></li>
+    <li><a href="/chapter/basic">Basics</a></li>
+    <li><a href="/overview">Overview</a></li>
 </ul>
 <h1>Basics</h1>
 
