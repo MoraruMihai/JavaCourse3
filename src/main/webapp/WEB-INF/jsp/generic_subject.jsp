@@ -17,12 +17,8 @@
 </ul>
 <h1>Basics</h1>
 
-<ul class="subjectsList">
-    <c:forEach items="${subjects}" var="subject">
-        <div class="listElement">
-            <li><a href="/chapter/${chapterName}/subject/${subject}"> ${subject}</a></li>
-        </div>
-    </c:forEach>
-</ul>
+<div>
+    ${content}
+</div>
 </body>
 </html>
