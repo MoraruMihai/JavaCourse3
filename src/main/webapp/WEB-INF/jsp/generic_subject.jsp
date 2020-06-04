@@ -15,9 +15,9 @@
     <li><a href="/chapter/basic">Basics</a></li>
     <li><a href="/overview">Overview</a></li>
 </ul>
-<h1>Basics</h1>
+<h1>${subjectName}</h1>
 
-<div>
+<div class="content">
     ${content}
 </div>
 </body>
