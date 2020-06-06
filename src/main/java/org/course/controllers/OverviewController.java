@@ -29,6 +29,7 @@ public class OverviewController {
     @GetMapping("/chapter/{chapterName}")
     public ModelAndView genericChapter(@PathVariable String chapterName){
          Map<String, Object> model = new HashMap<>();
+
          model.put("chapterName" , chapterName);
          model.put("subjects", chapterService.getSubjects(chapterName));
         return new ModelAndView("generic_chapter", model);

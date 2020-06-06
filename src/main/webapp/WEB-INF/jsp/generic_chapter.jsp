@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Chapter ${chapterName}</title>
-    <link rel="stylesheet" type="text/css" href="../css/style.css"  media="all" >
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css" />
 </head>
 <body>
 <div class="logo">

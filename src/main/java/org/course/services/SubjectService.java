@@ -2,22 +2,17 @@ package org.course.services;
 
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 @Service
 public class SubjectService {
 
-//    public String getContent(String chapterName, String subjectName) {
-//      return dummyContent();
-//    }
     public String getSubjectContent(String chapterName, String subjectName){
         if(allSubjectsContent == null){
             initSubjectsContent();
         }
-        return (allSubjectsContent.get(chapterName) + allSubjectsContent.get(subjectName));
+        return  allSubjectsContent.get(subjectName);
     }
 
         private static Map<String,String> allSubjectsContent;
