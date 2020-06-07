@@ -40,7 +40,10 @@ public class OverviewController {
         Map<String, Object> model = new HashMap<>();
         model.put("chapterName" , chapterName);
         model.put("subjectName" , subjectName);
-        model.put("content", subjectService.getSubjectContent(chapterName, subjectName));
+        model.put("definition", subjectService.getSubjectDefinition(chapterName, subjectName));
+        model.put("information", subjectService.getSubjectInfo(chapterName, subjectName));
+        model.put("example", subjectService.getSubjectExample(chapterName, subjectName));
+
         return new ModelAndView("generic_subject", model);
     }
 
