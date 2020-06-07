@@ -16,15 +16,23 @@
         <li><a href="/overview">Overview</a></li>
     </ul>
     <h1>${subjectName}</h1>
+    <c:forEach items="${subjects}" var="subject">
+        <div class="listElement">
+            <li><a href="/chapter/${chapterName}/subject/${subject}"> ${subject}</a></li>
+        </div>
+    </c:forEach>
     <div class="subjectContent">
         <div class="definition">
-            ${definition}
+            <p class="title">Introduction</p>
+            &emsp;${definition}
         </div><br>
         <div class="information">
-            ${information}
+            <p class="title">More details</p>
+        ${information}
         </div><br>
         <div class="example">
-            ${example}
+            <p class="title">Implementations</p>
+        ${example}
         </div>
     </div>
 </body>

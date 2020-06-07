@@ -57,3 +57,28 @@ h1 {
     color: black;
     font-size:20px;
 }
+.definition{
+    font-size: 18px;
+    margin-left: 30%;
+    margin-right: 10%;
+}
+.information{
+
+    font-size: 18px;
+    margin-left: 30%;
+    margin-right: 10%;
+}
+.example{
+    font-size: 18px;
+    margin-left: 30%;
+    margin-right: 10%;
+}
+.title{
+    font-family: Consolas;
+    text-align: center;
+    font-size: 28px;
+    color: tomato;
+    background-color: lightblue;
+    border-radius: 18px;
+
+}
