@@ -12,7 +12,7 @@ public class SubjectService {
     @Autowired
     private Environment environment;
 
-    public String getSubjectDefinition(String chapterName, String subjectName){
+    public String getSubjectDefinition(String subjectName){
         String propertyKey = "subject.definition." + subjectName.replace(" ", ".").toLowerCase();
 
         if(environment.containsProperty(propertyKey)){
@@ -21,7 +21,7 @@ public class SubjectService {
             return "No such subject found!";
         }
     }
-    public String getSubjectInfo(String chapterName, String subjectName){
+    public String getSubjectInfo(String subjectName){
         String propertyKey = "subject.information." + subjectName.replace(" ", ".").toLowerCase();
         if(environment.containsProperty(propertyKey)){
             return environment.getProperty(propertyKey);
@@ -30,7 +30,7 @@ public class SubjectService {
         }
 
     }
-    public String getSubjectExample(String chapterName, String subjectName){
+    public String getSubjectExample(String subjectName){
         String propertyKey = "subject.example." + subjectName.replace(" ", ".").toLowerCase();
         if(environment.containsProperty(propertyKey)){
             return environment.getProperty(propertyKey);
