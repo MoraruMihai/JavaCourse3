@@ -15,7 +15,7 @@
     <li><a href="/chapter/basic">Basics</a></li>
     <li><a href="/overview">Overview</a></li>
 </ul>
-<h1>Basics</h1>
+<h1>${chapterName}</h1>
 
 <ul class="subjectsList">
     <c:forEach items="${subjects}" var="subject">

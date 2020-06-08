@@ -24,7 +24,7 @@
     <div class="subjectContent">
         <div class="definition">
             <p class="title">Introduction</p>
-            &emsp;${definition}
+            &emsp; ${definition}
         </div><br>
         <div class="information">
             <p class="title">More details</p>
