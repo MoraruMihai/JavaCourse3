@@ -1,6 +1,6 @@
 body{
-background-image: url("/images/bground.jpg");
-background-size: cover;
+    background-image: url("/images/background.jpg");
+    background-attachment: fixed;
 }
 img{
     margin-left: 45px;
@@ -58,18 +58,18 @@ h1 {
     font-size:20px;
 }
 .definition{
-    font-size: 22px;
+    font-size: 20px;
     margin-left: 30%;
     margin-right: 10%;
 }
 .information{
 
-    font-size: 22px;
+    font-size: 20px;
     margin-left: 30%;
     margin-right: 10%;
 }
 .example{
-    font-size: 22px;
+    font-size: 20px;
     margin-left: 30%;
     margin-right: 10%;
 }

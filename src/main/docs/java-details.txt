@@ -53,6 +53,9 @@ Char - The char data type is a single 16-bit Unicode character. Its value-range 
 Example: char letterA = 'A'.
 
 Logical Operators:
+A logical operator is a symbol or word used to connect two or more expressions such that the value of
+the compound expression produced depends only on that of the original expressions and on the meaning
+of the operator.
 Logical operators are mainly used to control program flow. Usually, you will find them as part of an if, a while, or some other control statement (Chapter 6)
 The Logical operators are:
 op1 && op2

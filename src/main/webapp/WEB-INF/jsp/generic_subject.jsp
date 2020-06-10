@@ -28,11 +28,11 @@
         </div><br>
         <div class="information">
             <p class="title">More details</p>
-        ${information}
+            &emsp;${information}
         </div><br>
         <div class="example">
             <p class="title">Implementations</p>
-        ${example}
+            ${example}
         </div>
     </div>
 </body>
