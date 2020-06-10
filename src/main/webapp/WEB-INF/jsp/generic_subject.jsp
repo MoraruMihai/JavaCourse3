@@ -30,10 +30,13 @@
             <p class="title">More details</p>
             &emsp;${information}
         </div><br>
-        <div class="example">
-            <p class="title">Implementations</p>
-            ${example}
-        </div>
+        <c:if test="${not empty example}">
+            <div class="example">
+                <p class="title">Implementations</p>
+                    ${example}
+            </div>
+        </c:if>
+
     </div>
 </body>
 </html>

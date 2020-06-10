@@ -33,9 +33,9 @@ public class SubjectService {
     public String getSubjectExample(String subjectName){
         String propertyKey = "subject.example." + subjectName.replace(" ", ".").toLowerCase();
         if(environment.containsProperty(propertyKey)){
-            return environment.getProperty(propertyKey);
+                return environment.getProperty(propertyKey);
         }else{
-            return "No such subject found!";
+            return null;
         }
 
     }
