@@ -36,15 +36,16 @@ public class ChapterService {
         basicChapterSubjects.add("Control Flow Statements");
 
         List<String> intermediateChapterSubjects = new ArrayList<>();
+        intermediateChapterSubjects.add("Classes");
         intermediateChapterSubjects.add("Constructors");
         intermediateChapterSubjects.add("this vs super");
         intermediateChapterSubjects.add("Inheritance");
         intermediateChapterSubjects.add("Method Overloading");
         intermediateChapterSubjects.add("Method Overriding ");
-        intermediateChapterSubjects.add("Static vs Instance Variables/Methods");
+        intermediateChapterSubjects.add("Static vs Instance Variables and Methods");
         intermediateChapterSubjects.add("Encapsulation");
         intermediateChapterSubjects.add("Polymorphism");
-        intermediateChapterSubjects.add("Autoboxing/unboxing");
+        intermediateChapterSubjects.add("Autoboxing and unboxing");
 
         List<String> advancedChapterSubjects = new ArrayList<>();
         advancedChapterSubjects.add("Collections");
