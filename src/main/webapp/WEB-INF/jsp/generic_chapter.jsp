@@ -12,7 +12,7 @@
 <ul class="menuBar">
     <li><a href="/chapter/advanced">Advanced</a></li>
     <li><a href="/chapter/intermediate">Intermediate</a></li>
-    <li><a href="/chapter/basic">Basics</a></li>
+    <li><a href="/chapter/basics">Basics</a></li>
     <li><a href="/overview">Overview</a></li>
 </ul>
 <h1>${chapterName}</h1>
