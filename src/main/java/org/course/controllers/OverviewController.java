@@ -33,7 +33,7 @@ public class OverviewController {
         String s1 = chapterName.substring(0, 1).toUpperCase();
         String chapterNameCapitalized = s1 + chapterName.substring(1);
         model.put("chapterName" , chapterNameCapitalized);
-         model.put("subjects", chapterService.getSubjects(chapterName));
+        model.put("subjects", chapterService.getSubjects(chapterNameCapitalized));
         return new ModelAndView("generic_chapter", model);
     }
 
