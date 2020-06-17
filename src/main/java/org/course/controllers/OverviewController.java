@@ -30,7 +30,9 @@ public class OverviewController {
     public ModelAndView genericChapter(@PathVariable String chapterName){
          Map<String, Object> model = new HashMap<>();
 
-         model.put("chapterName" , chapterName);
+        String s1 = chapterName.substring(0, 1).toUpperCase();
+        String chapterNameCapitalized = s1 + chapterName.substring(1);
+        model.put("chapterName" , chapterNameCapitalized);
          model.put("subjects", chapterService.getSubjects(chapterName));
         return new ModelAndView("generic_chapter", model);
     }
@@ -38,7 +40,9 @@ public class OverviewController {
     @GetMapping("/chapter/{chapterName}/subject/{subjectName}")
     public ModelAndView genericSubject(@PathVariable String chapterName, @PathVariable String subjectName){
         Map<String, Object> model = new HashMap<>();
-        model.put("chapterName" , chapterName);
+        String s1 = chapterName.substring(0, 1).toUpperCase();
+        String chapterNameCapitalized = s1 + chapterName.substring(1);
+        model.put("chapterName" , chapterNameCapitalized);
         model.put("subjectName" , subjectName);
         model.put("definition", subjectService.getSubjectDefinition(subjectName));
         model.put("information", subjectService.getSubjectInfo(subjectName));
